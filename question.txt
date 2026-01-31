@@ -5,6 +5,21 @@ SOLUTION
 
 1.	State the problem clearly. Identify the input and output formats.
 
+problem: We need write a program to find the position of a given number arranged in decreasing order. We also need to minimize the number of times we access elements on the list
+
+inputs:
+cards: the list of numbers that represent the cards and the number on the(in decreasing order)
+e.g [13, 11, 10, 8, 5, 3, 1, 0]
+
+request or query: the card we(Bob) wants to pick from the list of cards
+e.g (8)
+
+outputs:
+card position (8)
+
+2. Come up with some examples and edge cases
+
+
 
 '''
 
