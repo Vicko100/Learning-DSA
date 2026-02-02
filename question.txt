@@ -17,9 +17,50 @@ e.g (8)
 outputs:
 card position (8)
 
-2. Come up with some examples and edge cases
+before we start coding we must write a signature function:
+
+def locate_cards(cards, query):
+  pass 
 
 
+2. Come up with some examples and test/edge cases
+cards = [13, 11, 10, 8, 5, 3, 1, 0]
+query = 8
+output = 3
+
+We represent out test cases as dictionaries to make it easier to test them once we write, implement out function. For example, the above test case can be represented as follows:
+
+test = {
+  'input' : {
+    'cards' : [13, 11, 10, 8, 5, 3, 1, 0],
+    'query' : 8
+  },
+  'output' : 3
+}
+
+now we test the above on the function; to check if the output of the function is equal to that of the test output(3)
+ 
+locate_cards(test['input']['cards'], test['input']['cards']) == test['output']
+
+or 
+
+locate_cards(**test['input']) == test['output']
+
+output for the above expression would be false
+
+when you use the ** python takes the keys of the 'input' dictionaries('cards'&'query') and designate their values to the arguements in the locate_cards function
+
+But before we start writing code out function should be able to hold any variation of inputs; so we must list possible variations that could affect our output:
+
+1. The number 'query' occurs somewhere in the middle of the list 'cards'
+2. 'query' is the first element in cards
+3. 'query' is the last element in cards
+4. The list 'cards' contain just one element, which is 'query'
+5. The list 'cards' does not contain 'query'
+6. The list 'cards' is empty
+7. The list 'cards' contains repeating numbers
+8. The number 'query' occurs at more than one positions in 'cards'
+9. 
 
 '''
 
