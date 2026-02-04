@@ -1,8 +1,8 @@
 def locate_card(card, query):
-  # Create a position that would be used to compare the position of the query
+  # Create a position variable that would be used to represent the index of the positions of cards
   position = 0
 
-  # Create a loop for repition (if )
+  # Create a loop for repition
   while True:
     
     if card[position] == query:

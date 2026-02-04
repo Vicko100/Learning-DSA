@@ -60,7 +60,8 @@ But before we start writing code out function should be able to hold any variati
 6. The list 'cards' is empty
 7. The list 'cards' contains repeating numbers
 8. The number 'query' occurs at more than one positions in 'cards'
-9. 
+
+
 
 '''
 
