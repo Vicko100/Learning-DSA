@@ -29,9 +29,12 @@ output = 3
 result = locate_cards(cards, query)
 print(result)
 
+result == output
+
+locate_cards(**test['input']) == test['output']
+
 test = []
 
-result == output
 #1. The number 'query' occurs somewhere in the middle of the list 'cards'
 test.append({
   'input': {
@@ -40,8 +43,6 @@ test.append({
   },
   'output': 3
 })
-
-locate_cards(**test['input']) == test['output']
 
 #2. 'query' is the first element in cards
 test.append({
@@ -127,3 +128,5 @@ for this problem we can follow this simple algorithm:
 This type of algorithm is called 'Linear Search'
 '''
 #Next we implement the algorithm see linear_search.py
+
+print(test)
